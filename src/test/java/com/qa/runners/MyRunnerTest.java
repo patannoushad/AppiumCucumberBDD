@@ -27,7 +27,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
         ,snippets = CAMELCASE
         ,dryRun=false
         ,monochrome=true
-        ,tags = "@test"
+        ,tags = "@negative"
 )
 public class MyRunnerTest {
 
@@ -35,7 +35,6 @@ public class MyRunnerTest {
     public static void initialize() throws Exception {
         GlobalParams params = new GlobalParams();
         params.initializeGlobalParams();
-
         ThreadContext.put("ROUTINGKEY", params.getPlatformName() + "_"
                 + params.getDeviceName());
 

@@ -32,18 +32,20 @@ public class CapabilitiesManager {
                             + File.separator + "resources" + File.separator + "apps" + File.separator + "Android.SauceLabs.Mobile.Sample.app.2.7.1.apk";
                     utils.log().info("appUrl is" + androidAppUrl);
                     caps.setCapability("app", androidAppUrl);
+                    //caps.setCapability("autoGrantPermissions", true);
+
                     break;
-                case "iOS":
-                    caps.setCapability("automationName", PropertyManager.getProperty("iOSAutomationName"));
-                    //String iOSAppUrl = getClass().getResource(props.getProperty("iOSAppLocation")).getFile();
-                    String iOSAppUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
-                            + File.separator + "resources" + File.separator + "apps" + File.separator + "SwagLabsMobileApp.app";
-                    utils.log().info("appUrl is" + iOSAppUrl);
-                    caps.setCapability("bundleId", PropertyManager.getProperty("iOSBundleId"));
-                    caps.setCapability("wdaLocalPort", params.getWdaLocalPort());
-                    caps.setCapability("webkitDebugProxyPort", params.getWebkitDebugProxyPort());
-                    caps.setCapability("app", iOSAppUrl);
-                    break;
+//                case "iOS":
+//                    caps.setCapability("automationName", PropertyManager.getProperty("iOSAutomationName"));
+//                    //String iOSAppUrl = getClass().getResource(props.getProperty("iOSAppLocation")).getFile();
+//                    String iOSAppUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
+//                            + File.separator + "resources" + File.separator + "apps" + File.separator + "SwagLabsMobileApp.app";
+//                    utils.log().info("appUrl is" + iOSAppUrl);
+//                    caps.setCapability("bundleId", PropertyManager.getProperty("iOSBundleId"));
+//                    caps.setCapability("wdaLocalPort", params.getWdaLocalPort());
+//                    caps.setCapability("webkitDebugProxyPort", params.getWebkitDebugProxyPort());
+//                    caps.setCapability("app", iOSAppUrl);
+//                    break;
             }
             return caps;
         } catch(Exception e){

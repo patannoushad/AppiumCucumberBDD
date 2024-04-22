@@ -2,7 +2,7 @@ package com.qa.utils;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
+
 
 import java.io.IOException;
 
@@ -21,7 +21,6 @@ public class DriverManager {
     public void initializeDriver() throws Exception {
         AppiumDriver driver = null;
         GlobalParams params = new GlobalParams();
-        PropertyManager props = new PropertyManager();
 
         if(driver == null){
             try{
@@ -30,9 +29,9 @@ public class DriverManager {
                     case "Android":
                         driver = new AndroidDriver(new ServerManager().getServer().getUrl(), new CapabilitiesManager().getCaps());
                         break;
-                    case "iOS":
-                        driver = new IOSDriver(new ServerManager().getServer().getUrl(), new CapabilitiesManager().getCaps());
-                        break;
+//                    case "iOS":
+//                        driver = new IOSDriver(new ServerManager().getServer().getUrl(), new CapabilitiesManager().getCaps());
+//                        break;
                 }
                 if(driver == null){
                     throw new Exception("driver is null. ABORT!!!");

@@ -1,13 +1,11 @@
 package com.qa.stepdef;
 
 import com.qa.pages.LoginPage;
-import com.qa.pages.ProductsPage;
 import com.qa.utils.TestData;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.openqa.selenium.WebElement;
+
 
 import java.io.FileNotFoundException;
 

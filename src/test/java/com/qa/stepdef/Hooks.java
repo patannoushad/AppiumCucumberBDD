@@ -16,16 +16,8 @@ public class Hooks {
     public void initialize() throws Exception {
         BasePage basePage = new BasePage();
         basePage.closeApp();
+        //basePage.removeApp();
         basePage.launchApp();
-
-/*        GlobalParams params = new GlobalParams();
-        params.initializeGlobalParams();
-
-        ThreadContext.put("ROUTINGKEY", params.getPlatformName() + "_"
-                + params.getDeviceName());
-
-        new ServerManager().startServer();
-        new DriverManager().initializeDriver();*/
         new VideoManager().startRecording();
     }
 
@@ -37,6 +29,14 @@ public class Hooks {
         }
 
         new VideoManager().stopRecording(scenario.getName());
+        BasePage basePage = new BasePage();
+        //basePage.removeApp();
+        basePage.closeApp();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 /*        DriverManager driverManager = new DriverManager();
         if(driverManager.getDriver() != null){
             driverManager.getDriver().quit();

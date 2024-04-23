@@ -6,7 +6,7 @@ import com.qa.pages.ProductsPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
+import org.testng.Assert;
 
 public class ProductStepDef {
 
@@ -20,8 +20,8 @@ public class ProductStepDef {
         Boolean titleCheck = new ProductsPage().getProductTitle(title).equalsIgnoreCase(title);
         Boolean priceCheck = true;
 //        Boolean priceCheck = new ProductsPage().getProductPrice(title, price).equalsIgnoreCase(price);
-        Assert.assertTrue("titleCheck = " + titleCheck + ", priceCheck = " + priceCheck,
-                titleCheck & priceCheck);
+        Assert.assertTrue(titleCheck & priceCheck,
+                "titleCheck = " + titleCheck + ", priceCheck = " + priceCheck);
     }
 
     @When("I click product title {string}")
@@ -35,7 +35,7 @@ public class ProductStepDef {
         boolean titleCheck = productDetailsPage.getTitle().equalsIgnoreCase(title);
         boolean descCheck = productDetailsPage.getDesc().equalsIgnoreCase(description);
         boolean priceCheck = productDetailsPage.getPrice().equalsIgnoreCase(price);
-        Assert.assertTrue("titleCheck = " + titleCheck + ", descCheck = " + descCheck + ", priceCheck = " + priceCheck,
-                titleCheck & descCheck & priceCheck);
+        Assert.assertTrue(titleCheck & descCheck & priceCheck,
+                "titleCheck = " + titleCheck + ", descCheck = " + descCheck + ", priceCheck = " + priceCheck);
     }
 }

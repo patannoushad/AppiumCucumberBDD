@@ -1,6 +1,7 @@
 package com.qa.runners;
 
 import com.qa.utils.DriverManager;
+import com.qa.utils.EmailUtils;
 import com.qa.utils.GlobalParams;
 import com.qa.utils.ServerManager;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -26,7 +27,7 @@ import static io.cucumber.testng.CucumberOptions.SnippetType.CAMELCASE;
         ,snippets = CAMELCASE
         //,dryRun=false
         ,monochrome=true
-        ,tags = "@login"
+        ,tags = "@negative"
 )
 public class MyRunnerTest extends AbstractTestNGCucumberTests {
 
@@ -52,5 +53,6 @@ public class MyRunnerTest extends AbstractTestNGCucumberTests {
         if(serverManager.getServer() != null){
             serverManager.getServer().stop();
         }
+        EmailUtils.sendEmailWithAttachment("noushad.pathan79@gmail.com");
     }
 }

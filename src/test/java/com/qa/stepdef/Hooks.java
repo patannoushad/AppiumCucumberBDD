@@ -18,15 +18,6 @@ public class Hooks {
         basePage.closeApp();
         //basePage.removeApp();
         basePage.launchApp();
-
-/*        GlobalParams params = new GlobalParams();
-        params.initializeGlobalParams();
-
-        ThreadContext.put("ROUTINGKEY", params.getPlatformName() + "_"
-                + params.getDeviceName());
-
-        new ServerManager().startServer();
-        new DriverManager().initializeDriver();*/
         new VideoManager().startRecording();
     }
 

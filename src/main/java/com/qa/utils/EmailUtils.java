@@ -13,6 +13,7 @@ import java.util.Properties;
 
     public class EmailUtils {
         public static void sendEmailWithAttachment(String to) {
+
             // Sender's email ID needs to be mentioned
             String from = "patannoushad1998@gmail.com";
             String password = "zkebobjlvldeewyu";
@@ -54,7 +55,7 @@ import java.util.Properties;
                 // Create the message part
                 BodyPart messageBodyPart = new MimeBodyPart();
 
-                String body = "Please find attached the automated test case report for eatOS POS conducted on "+ CommonUtils.dateTime() +". " +
+                String body = "Hello Good day, Please find attached the automated test case report for eatOS POS conducted on "+ CommonUtils.dateTime() +". " +
                         "The report includes detailed analysis and results of the automated tests performed.";
 
                 // Now set the actual message

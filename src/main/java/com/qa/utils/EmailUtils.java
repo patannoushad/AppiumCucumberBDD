@@ -67,7 +67,8 @@ import java.util.Properties;
                 // Set text message part
                 multipart.addBodyPart(messageBodyPart);
 
-                String attachmentPath = "C:\\Users\\PATAN MUNNA\\IdeaProjects\\appium-cucumberbdd-master\\test-output\\PdfReport\\AutomationPdf.pdf";
+
+                String attachmentPath = PropertyManager.getProperty("attachmentPath");
 
                 // Part two is attachment
 //                messageBodyPart = new MimeBodyPart();
@@ -76,7 +77,7 @@ import java.util.Properties;
 //                messageBodyPart.setFileName("AutomationPdf");
 
                 MimeBodyPart fileMime = new MimeBodyPart();
-                File file = new File(attachmentPath);
+                File file = new File(System.getProperty("user.dir")+"\\test-output\\PdfReport\\AutomationPdf.pdf");
                 fileMime.attachFile(file);
 
                 multipart.addBodyPart(fileMime);

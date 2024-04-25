@@ -17,7 +17,7 @@
         <documentTitle>Appium</documentTitle>
 
         <!-- report name - displayed at top-nav -->
-        <reportName>Automation Report</reportName>
+        <reportName>Test Automation Report</reportName>
 
         <!-- location of charts in the test view -->
         <!-- top, bottom -->
@@ -35,5 +35,78 @@
             <![CDATA[
             ]]>
         </styles>
+
+
+        <!-- pdf start -->
+        <pdfConfig>
+            <!-- footer will be displayed on every pdf page -->
+            <pdfFooterText>Your custom footer text here</pdfFooterText>
+            <pdfPageSize>Letter</pdfPageSize>
+            <pdfPageSizeHeight>0</pdfPageSizeHeight>
+            <pdfPageSizeWidth>0</pdfPageSizeWidth>
+            <pdfPageMargin>36</pdfPageMargin>
+            <pdfBackgroundColor>#FFFFFF</pdfBackgroundColor>
+            <pdfDisplayTestStatus>true</pdfDisplayTestStatus>
+            <pdfDisplayConfiguration>false</pdfDisplayConfiguration>
+            <pdfFontFamily>Helvetica</pdfFontFamily>
+
+            <!-- Custom header text to be displayed on every page -->
+            <pdfHeaderText>Your custom header text here</pdfHeaderText>
+
+            <!-- Whether to display the page numbers in the footer -->
+            <pdfDisplayPageNumber>true</pdfDisplayPageNumber>
+
+            <!-- Whether to display the time stamp in the footer -->
+            <pdfDisplayTimeStamp>true</pdfDisplayTimeStamp>
+
+            <!-- Whether to enable table of contents (TOC) in the PDF report -->
+            <pdfEnableTOC>true</pdfEnableTOC>
+
+            <!-- Whether to show categories in the TOC -->
+            <pdfEnableCategory>true</pdfEnableCategory>
+
+            <!-- Whether to show authors in the TOC -->
+            <pdfEnableAuthor>true</pdfEnableAuthor>
+
+            <!-- Whether to show devices in the TOC -->
+            <pdfEnableDevice>true</pdfEnableDevice>
+
+            <!-- Whether to show exceptions in the TOC -->
+            <pdfEnableException>true</pdfEnableException>
+
+            <!-- Whether to show logs in the TOC -->
+            <pdfEnableLogs>true</pdfEnableLogs>
+
+            <!-- Whether to show media in the TOC -->
+            <pdfEnableMedia>true</pdfEnableMedia>
+
+            <!-- Whether to show steps in the TOC -->
+            <pdfEnableTest>true</pdfEnableTest>
+
+            <!-- Whether to show test runner information in the TOC -->
+            <pdfEnableRunner>true</pdfEnableRunner>
+
+            <!-- Whether to show user steps in the TOC -->
+            <pdfEnableUserSteps>true</pdfEnableUserSteps>
+
+            <!-- Whether to show system information in the TOC -->
+            <pdfEnableSystemInfo>true</pdfEnableSystemInfo>
+
+            <!-- Whether to show timeline in the TOC -->
+            <pdfEnableTimeline>true</pdfEnableTimeline>
+
+            <!-- Whether to show tags in the TOC -->
+            <pdfEnableTag>true</pdfEnableTag>
+
+            <!-- Whether to show data in the TOC -->
+            <pdfEnableData>true</pdfEnableData>
+
+            <!-- Whether to show environment information in the TOC -->
+            <pdfEnableEnvironment>true</pdfEnableEnvironment>
+
+            <!-- Whether to show configuration information in the TOC -->
+            <pdfEnableConfiguration>true</pdfEnableConfiguration>
+        </pdfConfig>
+        <!-- pdf end -->
     </configuration>
 </extentreports>

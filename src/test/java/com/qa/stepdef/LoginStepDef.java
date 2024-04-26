@@ -1,5 +1,6 @@
 package com.qa.stepdef;
 
+import com.qa.pages.BasePage;
 import com.qa.pages.LoginPage;
 import com.qa.pages.ProductsPage;
 import io.cucumber.java.en.Then;
@@ -7,8 +8,15 @@ import io.cucumber.java.en.When;
 import org.testng.Assert;
 
 public class LoginStepDef {
+    LoginPage loginPage = new LoginPage();
+    BasePage basePage = new BasePage();
     @When("I enter username as {string}")
     public void iEnterUsernameAs(String username) {
+//        loginPage.usernameTxtFld.clear();
+//        loginPage.usernameTxtFld.sendKeys(username);
+        //or
+//        basePage.clearText(loginPage.usernameTxtFld);
+//        basePage.typeTextIntoElement(loginPage.usernameTxtFld, username);
         new LoginPage().enterUserName(username);
     }
 

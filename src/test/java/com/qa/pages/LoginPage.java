@@ -4,11 +4,10 @@ import com.qa.utils.CommonUtils;
 import com.qa.utils.TestData;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import java.io.FileNotFoundException;
-import java.util.List;
 
 public class LoginPage extends BasePage  {
 

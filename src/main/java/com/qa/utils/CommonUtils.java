@@ -50,8 +50,8 @@ public class CommonUtils {
 		return stringMap;
 	}
 	
-	public String dateTime() {
-		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+	public static String dateTime() {
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
 		return dateFormat.format(date);
 	}

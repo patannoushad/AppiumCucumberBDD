@@ -135,6 +135,12 @@ public class BasePage {
                         getCapability("bundleId").toString());
         }
     }
+    public void removeApp() {
+        if ("Android".equals(new GlobalParams().getPlatformName())) {
+            ((InteractsWithApps) driver).removeApp(driver.getCapabilities().
+                    getCapability("appPackage").toString());
+        }
+    }
 
     public WebElement andScrollToElementUsingUiScrollable(String childLocAttr, String childLocValue) {
         return driver.findElement(AppiumBy.androidUIAutomator(

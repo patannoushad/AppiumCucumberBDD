@@ -1,4 +1,4 @@
-@test @extent
+@test @extent @login
 Feature: Login scenarios
 
   @negatives @one

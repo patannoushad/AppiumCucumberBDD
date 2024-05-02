@@ -1,8 +1,6 @@
 package com.qa.utils;
 
-import io.appium.java_client.AppiumDriver;
 import org.apache.poi.ss.usermodel.*;
-import org.openqa.selenium.support.PageFactory;
 
 import java.io.File;
 import java.io.FileNotFoundException;

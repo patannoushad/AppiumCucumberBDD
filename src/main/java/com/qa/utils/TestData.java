@@ -1,8 +1,7 @@
 package com.qa.utils;
 
-import io.appium.java_client.AppiumDriver;
 import org.apache.poi.ss.usermodel.*;
-import org.openqa.selenium.support.PageFactory;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -49,3 +48,21 @@ public class TestData {
         return datacomb.get(key);
     }
 }
+
+/*
+public class WriteintoExcel {
+    public static void main(String[] args) throws IOException {
+        String path = "D://DemoFile.xlsx";
+        FileInputStream fs = new FileInputStream(path);
+        Workbook wb = new XSSFWorkbook(fs);
+        Sheet sheetl = wb.getSheetAt(0);
+        int lastRow = sheetl.getLastRowNum();
+        for(int i=0; i<=lastRow; i++) {
+            Row row = sheet1.getRow(i);
+            Cell cell = row.createCell(2);
+            cell.setCellValue ("WriteintoExcel");
+        }
+        FileOutputStream fos new FileOutputStream(path); wb.write(fos);
+        fos.close();
+    }
+*/

@@ -1,11 +1,6 @@
 package com.qa.utils;
 
 import org.apache.poi.ss.usermodel.*;
-<<<<<<< HEAD
-
-=======
->>>>>>> TestOne
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;

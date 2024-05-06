@@ -10,14 +10,6 @@ public class ElementUtils extends DriverManager {
 
 
 
-
-
-
-
-
-
-
-
 //    AppiumDriver driver;
 //    Actions actions= new Actions(driver);
 //

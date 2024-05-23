@@ -52,6 +52,7 @@
 
 
         <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+        <!-- It will -->
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>

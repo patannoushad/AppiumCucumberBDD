@@ -32,10 +32,10 @@ Framework implements below best practices
 - Supports iOS and Android
 - Demonstrates how to define UI elements that are common across pages (e.g. menu bar, side bar, etc.)
 - How to recover from test failure/ how to write fail safe test cases
-- Scrolling for both Android and iOS (using touchaction, uiScrollable, mobile:scroll)
+- Scrolling for both Android and iOS (using touch action, uiScrollable, mobile:scroll)
 - Demonstrates how to effectively capture Screenshots/Videos
 - Supports parallel execution using JUnit
 - Supports parallel execution on multiple real Android and iOS devices
-- Start Appium server propgrammatically
+- Start Appium server programmatically
 - Supports Cucumber-HTML-Reporter plugin
 - Integrated with Log4J2 Logging framework

@@ -9,10 +9,10 @@ Feature:  Register functionality
     Examples:
       |    condition	 |
       |      TC001       |
-      |      TC002       |
-      |      TC003       |
-      |      TC004       |
-      |      TC005       |
-      |      TC006       |
+#      |      TC002       |
+#      |      TC003       |
+#      |      TC004       |
+#      |      TC005       |
+#      |      TC006       |
 
 

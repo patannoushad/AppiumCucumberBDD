@@ -18,7 +18,7 @@ public class Hooks {
         basePage.closeApp();
         //basePage.removeApp();
         basePage.launchApp();
-        new VideoManager().startRecording();
+        //new VideoManager().startRecording();
     }
 
     @After
